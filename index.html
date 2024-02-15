@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="root">
+        <header class="header">
+            <h1 class="header-title">ToDoList</h1>
+        </header>
+
+        <aside class="filters">
+            <section class="filters-buttons">
+                <button class="btn btn-active">Все</button>
+                <button class="btn">В работе</button>
+                <button class="btn">Выполнено</button>
+            </section>
+        </aside>
+
+        <main class="main">
+            <ul class="todo-list">
+                <li class="todo-item todo-item-complete">
+                    <div class="todo-item-text">
+                        <h2 class="todo-item-title">Задача 1</h2>
+                        <h3 class="todo-item-descr">Описание задачи 1</h3>
+                    </div>
+                    <div class="todo-item-checked">
+                        <span>V</span>
+                    </div>
+                    <div class="todo-item-remove">
+                        <span>X</span>
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item-text">
+                        <h2 class="todo-item-title">Задача 2</h2>
+                        <h3 class="todo-item-descr">Описание задачи 2</h3>
+                    </div>
+                    <div class="todo-item-checked">
+                        <span>V</span>
+                    </div>
+                    <div class="todo-item-remove">
+                        <span>X</span>
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item-text">
+                        <h2 class="todo-item-title">Задача 3</h2>
+                        <h3 class="todo-item-descr">Описание задачи 3</h3>
+                    </div>
+                    <div class="todo-item-checked">
+                        <span>V</span>
+                    </div>
+                    <div class="todo-item-remove">
+                        <span>X</span>
+                    </div>
+                </li>
+            </ul>
+
+            <section class="add-todo">
+                <button class="add-todo-button">
+                    <span>+</span>
+                </button>
+                <form class="add-todo-form hidden">
+                    <button class="close-button" type="button">
+                        <span>X</span>
+                    </button>
+                    <label for="inputName">Имя задачи:</label>
+                    <div class="text-input text-input-active">
+                        <input class="input" name="inputName">
+                    </div>
+                    <label for="inputName">Описание задачи:</label>
+                    <div class="text-input">
+                        <input class="input" name="inputDescr">
+                    </div>
+                    <button class="add-todo-form-button">Добавить задачу</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="app-footer">2 в работе, 1 выполнено</footer>
+    </div>
+</body>
+
+</html>
